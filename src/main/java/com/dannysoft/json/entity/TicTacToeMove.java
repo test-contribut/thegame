@@ -4,6 +4,16 @@ public class TicTacToeMove {
 
     String move;
     Integer turn;
+    String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
 
     public Integer getTurn() {
         return turn;
@@ -24,9 +34,6 @@ public class TicTacToeMove {
 
     @Override
     public String toString() {
-        return "TicTacToeMove{" +
-                "move='" + move + '\'' +
-                ", turn=" + turn +
-                '}';
+        return "TicTacToeMove{" + "move='" + move + '\'' + ", turn=" + turn + ", type='" + type + '\'' + '}';
     }
 }

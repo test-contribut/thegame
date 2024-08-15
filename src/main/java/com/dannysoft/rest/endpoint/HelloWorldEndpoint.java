@@ -17,4 +17,9 @@ public class HelloWorldEndpoint {
     public String hello(@PathVariable String var) {
         return "Hello World " + var;
     }
+
+    @PostMapping(value = "/move")
+    public void makeMove(@RequestBody TicTacToeMove ticTacToeMove) {
+        System.out.println(ticTacToeMove);
+    }
 }
